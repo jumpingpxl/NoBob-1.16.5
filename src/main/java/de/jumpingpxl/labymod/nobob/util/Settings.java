@@ -40,6 +40,10 @@ public class Settings {
 		settingsElements.add(new HeaderElement("§cOptions -> Video Settings -> View Bobbing"));
 	}
 
+	public boolean isEnabled() {
+		return enabled;
+	}
+
 	private JsonObject getConfig() {
 		return noBob.getConfig();
 	}
