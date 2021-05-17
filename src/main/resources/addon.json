@@ -1,0 +1,11 @@
+{
+  "uuid": "%uuid%",
+  "author": "JumpingPxl",
+  "name": "",
+  "mainClass": "de.jumpingpxl.labymod.nobob.NoBob",
+  "transformerClass": "de.jumpingpxl.labymod.nobob.Transformer",
+  "description": "",
+  "version": 1,
+  "category": 4,
+  "icon": "https://nicomiddendorf.de/jumpingaddon/AddonIcon.png"
+}
