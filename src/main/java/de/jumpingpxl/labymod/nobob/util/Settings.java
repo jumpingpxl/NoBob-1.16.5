@@ -7,6 +7,7 @@ import net.labymod.settings.elements.ControlElement;
 import net.labymod.settings.elements.HeaderElement;
 import net.labymod.settings.elements.SettingsElement;
 import net.labymod.utils.Material;
+import net.minecraft.client.Minecraft;
 
 import java.util.List;
 
@@ -33,11 +34,11 @@ public class Settings {
 					getConfig().addProperty("enabled", newValue);
 					saveConfig();
 				}, enabled));
-		settingsElements.add(new HeaderElement(""));
-		settingsElements.add(new HeaderElement("§4§lIMPORTANT"));
-		settingsElements.add(new HeaderElement(
-				"§cIn order for NoBob to work, the following setting has to be enabled:"));
-		settingsElements.add(new HeaderElement("§cOptions -> Video Settings -> View Bobbing"));
+		DynamicHeaderElement.DynamicConsumer<Boolean> dynamicConsumer =
+				() -> !Minecraft.getInstance().gameSettings.viewBobbing;
+		settingsElements.add(new DynamicHeaderElement(dynamicConsumer, 15, "", "§4§lIMPORTANT",
+				"§cIn order for NoBob to work, the following setting has to be enabled:",
+				"§cOptions -> Video Settings -> View Bobbing"));
 	}
 
 	public boolean isEnabled() {
