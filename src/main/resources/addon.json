@@ -1,10 +1,10 @@
 {
   "uuid": "%uuid%",
   "author": "JumpingPxl",
-  "name": "",
+  "name": "NoBob",
   "mainClass": "de.jumpingpxl.labymod.nobob.NoBob",
-  "description": "",
+  "description": "This add-on allows you to get the beloved (no)bob animation from old school cheat clients.",
   "version": 1,
   "category": 4,
-  "icon": "https://nicomiddendorf.de/jumpingaddon/AddonIcon.png"
+  "icon": "https://nicomiddendorf.de/jumpingaddon/NoBobIcon.png"
 }
