@@ -1,5 +1,6 @@
 package de.jumpingpxl.labymod.nobob;
 
+import de.jumpingpxl.labymod.nobob.listener.TickListener;
 import de.jumpingpxl.labymod.nobob.util.Settings;
 import net.labymod.api.LabyModAddon;
 import net.labymod.settings.elements.SettingsElement;
@@ -21,6 +22,8 @@ public class NoBob extends LabyModAddon {
 	@Override
 	public void onEnable() {
 		settings = new Settings(this);
+
+		getApi().getEventService().registerListener(new TickListener(settings));
 	}
 
 	@Override
