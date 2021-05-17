@@ -3,7 +3,6 @@
   "author": "JumpingPxl",
   "name": "",
   "mainClass": "de.jumpingpxl.labymod.nobob.NoBob",
-  "transformerClass": "de.jumpingpxl.labymod.nobob.Transformer",
   "description": "",
   "version": 1,
   "category": 4,
