@@ -36,7 +36,7 @@ public class Settings {
 		settingsElements.add(new HeaderElement(""));
 		settingsElements.add(new HeaderElement("§4§lIMPORTANT"));
 		settingsElements.add(new HeaderElement(
-				"§cThe following setting has to be enabled in order for NoBob to work:"));
+				"§cIn order for NoBob to work, the following setting has to be enabled:"));
 		settingsElements.add(new HeaderElement("§cOptions -> Video Settings -> View Bobbing"));
 	}
 
